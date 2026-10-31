@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | B.Tech Innovator & Engineer</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Editorial Serif + Clean Modern Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Instrument Serif"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            surface: '#FAF9F5',
+            ink: '#161614',
+            muted: '#666560',
+            borderSubtle: '#E5E3DC',
+            accent: '#B8652A',
+            forest: '#2C3E2D'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-surface text-ink font-sans antialiased selection:bg-accent selection:text-white">
+
+  <!-- ================= TOP NAV ================= -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-md border-b border-borderSubtle">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between text-xs font-semibold tracking-wider uppercase">
+      <!-- Replace with your name -->
+      <a href="#" class="text-ink flex items-center gap-2 hover:opacity-75 transition">
+        <span class="w-2 h-2 rounded-full bg-forest"></span>
+        ANAGHA NAIR / B.TECH ’29
+      </a>
+
+      <div class="hidden md:flex items-center gap-8 text-muted">
+        <a href="#flagship" class="hover:text-ink transition">Current Project</a>
+        <a href="#other-work" class="hover:text-ink transition">Selected Work</a>
+        <a href="#about" class="hover:text-ink transition">About</a>
+        <a href="#skills" class="hover:text-ink transition">Toolkit</a>
+      </div>
+
+      <a href="#contact" class="px-4 py-2 rounded-full bg-ink text-surface text-[11px] font-bold hover:bg-forest transition">
+        Let's Talk
+      </a>
+    </div>
+  </nav>
+
+  <!-- ================= HERO SECTION ================= -->
+  <header class="pt-36 pb-20 px-6 max-w-6xl mx-auto">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-borderSubtle bg-white text-xs font-medium text-muted mb-8">
+      <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+      2nd Year Undergraduate • Bengaluru, India
+    </div>
+
+    <h1 class="text-5xl md:text-8xl font-serif tracking-tight leading-[0.98] text-ink max-w-5xl">
+      Engineering at the intersection of <span class="italic font-normal text-forest">material science</span>, hardware & circular design.
+    </h1>
+
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-12 gap-8 items-end border-t border-borderSubtle pt-8">
+      <p class="md:col-span-8 text-lg text-muted font-normal leading-relaxed">
+        I am an engineering student curious about how we can replace petroleum-heavy materials with locally sourced biological waste. Currently researching waste-to-textile conversion while exploring rapid physical prototyping and embedded systems.
+      </p>
+      
+      <div class="md:col-span-4 flex md:justify-end gap-6 text-xs uppercase font-mono text-muted">
+        <div>
+          <span class="block text-xl font-serif text-ink">04+</span>
+          Prototypes
+        </div>
+        <div>
+          <span class="block text-xl font-serif text-ink">Bengaluru</span>
+          Based
+        </div>
+        <div>
+          <span class="block text-xl font-serif text-ink">Open</span>
+          For Internships
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= CURRENT / FLAGSHIP PROJECT ================= -->
+  <section id="flagship" class="max-w-6xl mx-auto px-6 py-12">
+    <div class="flex items-center justify-between mb-6">
+      <div class="flex items-center gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-accent animate-ping"></span>
+        <span class="text-xs uppercase font-mono tracking-widest text-accent font-bold">Featured / Current Project</span>
+      </div>
+      <span class="text-xs font-mono text-muted">Lab Phase: Prototyping</span>
+    </div>
+
+    <div class="bg-white rounded-3xl border border-borderSubtle overflow-hidden p-8 md:p-12 shadow-sm">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left: Image / Prototype Render -->
+        <div class="lg:col-span-7">
+          <div class="relative w-full h-[360px] md:h-[480px] rounded-2xl overflow-hidden bg-stone-100 group">
+            <!-- Replace with your actual project photo -->
+            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=1200" 
+                 alt="Jackfruit Bio Leather Sample" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute bottom-4 left-4 bg-ink/80 backdrop-blur-sm text-surface text-xs px-3.5 py-1.5 rounded-full font-mono">
+              Material Sample #03 • Bio-composite Sheet
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Project Brief -->
+        <div class="lg:col-span-5 flex flex-col justify-between h-full space-y-6">
+          <div>
+            <span class="text-xs font-mono text-forest font-bold tracking-wider uppercase">Agro-Waste to Fashion Goods</span>
+            <h2 class="text-3xl md:text-4xl font-serif text-ink mt-2 mb-4">
+              Artocarpus: Jackfruit Shells to Vegan Leather
+            </h2>
+            <p class="text-muted text-sm leading-relaxed mb-4">
+              Upcycling non-edible jackfruit rinds from local markets in Bengaluru into a pliable, 100% biodegradable material alternative to animal leather and synthetic PU.
+            </p>
+            <p class="text-muted text-sm leading-relaxed">
+              Focuses on optimizing cellulose fiber extraction, natural plant-based cross-linking agents, and testing tensile parameters for everyday accessories like wallets and bags.
+            </p>
+          </div>
+
+          <!-- Quick Metrics / Pillars -->
+          <div class="grid grid-cols-3 gap-3 border-y border-borderSubtle py-4 text-center">
+            <div>
+              <div class="text-lg font-serif text-ink">0%</div>
+              <div class="text-[10px] uppercase font-mono text-muted">Plastics</div>
+            </div>
+            <div>
+              <div class="text-lg font-serif text-ink">14.8 MPa</div>
+              <div class="text-[10px] uppercase font-mono text-muted">Tensile Peak</div>
+            </div>
+            <div>
+              <div class="text-lg font-serif text-ink">Local</div>
+              <div class="text-[10px] uppercase font-mono text-muted">Raw Material</div>
+            </div>
+          </div>
+
+          <!-- Tags -->
+          <div class="flex flex-wrap gap-2 text-xs font-mono text-muted">
+            <span class="bg-surface px-3 py-1 rounded-full border border-borderSubtle">Biomaterials</span>
+            <span class="bg-surface px-3 py-1 rounded-full border border-borderSubtle">Circular Economy</span>
+            <span class="bg-surface px-3 py-1 rounded-full border border-borderSubtle">Product Design</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= OTHER SELECTED WORKS ================= -->
+  <section id="other-work" class="max-w-6xl mx-auto px-6 py-20 border-t border-borderSubtle">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+      <div>
+        <span class="text-xs uppercase tracking-widest font-mono text-forest font-bold">Explorations</span>
+        <h2 class="text-4xl font-serif mt-2 text-ink">Other Works & Coursework</h2>
+      </div>
+      <p class="text-muted text-sm max-w-xs mt-3 md:mt-0">
+        Additional engineering projects, CAD prototypes, and academic build sprints.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Project 02 -->
+      <div class="bg-white p-6 rounded-3xl border border-borderSubtle flex flex-col justify-between group hover:border-ink transition duration-300">
+        <div class="h-64 rounded-2xl bg-stone-100 overflow-hidden mb-6">
+          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800" 
+               alt="Hardware prototype" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div>
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-xs font-mono text-muted">HARDWARE & CAD</span>
+            <span class="text-xs font-mono text-muted">2026</span>
+          </div>
+          <h3 class="text-2xl font-serif text-ink mb-2">Bench-Scale Material Tensile Test Rig</h3>
+          <p class="text-muted text-sm leading-relaxed mb-6">
+            A low-cost strain-gauge fixture designed in Fusion 360 and assembled with Arduino to test sample tensile limits in our student workshop.
+          </p>
+          <div class="flex gap-2 text-xs font-mono text-muted">
+            <span class="bg-surface px-2.5 py-1 rounded border border-borderSubtle">Arduino</span>
+            <span class="bg-surface px-2.5 py-1 rounded border border-borderSubtle">CAD</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 03 -->
+      <div class="bg-white p-6 rounded-3xl border border-borderSubtle flex flex-col justify-between group hover:border-ink transition duration-300">
+        <div class="h-64 rounded-2xl bg-stone-100 overflow-hidden mb-6">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" 
+               alt="IoT Environmental sensor" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div>
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-xs font-mono text-muted">EMBEDDED SYSTEMS</span>
+            <span class="text-xs font-mono text-muted">2025</span>
+          </div>
+          <h3 class="text-2xl font-serif text-ink mb-2">Compost Moisture & Temp Telemetry Node</h3>
+          <p class="text-muted text-sm leading-relaxed mb-6">
+            ESP32-driven remote sensor node logging temperature and humidity during degradation trials to monitor soil breakdown speeds.
+          </p>
+          <div class="flex gap-2 text-xs font-mono text-muted">
+            <span class="bg-surface px-2.5 py-1 rounded border border-borderSubtle">ESP32</span>
+            <span class="bg-surface px-2.5 py-1 rounded border border-borderSubtle">C++</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ME ================= -->
+  <section id="about" class="py-20 bg-white border-y border-borderSubtle">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+      
+      <div class="md:col-span-5">
+        <div class="w-full aspect-[4/5] rounded-3xl overflow-hidden bg-stone-100 border border-borderSubtle">
+          <!-- Replace with your personal portrait -->
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800" 
+               alt="Portrait" 
+               class="w-full h-full object-cover">
+        </div>
+      </div>
+
+      <div class="md:col-span-7 space-y-6">
+        <span class="text-xs uppercase font-mono tracking-widest text-forest font-bold">About the Creator</span>
+        <h2 class="text-4xl font-serif text-ink">B.Tech Student, Maker & Problem Solver</h2>
+        <p class="text-muted leading-relaxed">
+          I am currently in my 2nd year of B.Tech in Bengaluru. Living in Karnataka surrounded by tech parks and abundant agro-produce inspired me to rethink waste streams through engineering.
+        </p>
+        <p class="text-muted leading-relaxed">
+          Whether it’s formulating bio-composites in the chemistry lab or 3D-modeling rapid prototypes, I enjoy getting my hands dirty and turning unrefined concepts into functional artifacts.
+        </p>
+        
+        <div class="pt-4 grid grid-cols-2 gap-6 text-sm border-t border-borderSubtle">
+          <div>
+            <span class="block font-mono text-xs text-muted uppercase">Education</span>
+            <span class="font-medium text-ink">B.Tech (2024 – 2028)</span>
+            <span class="block text-xs text-muted">Bengaluru, Karnataka</span>
+          </div>
+          <div>
+            <span class="block font-mono text-xs text-muted uppercase">Interests</span>
+            <span class="font-medium text-ink">Biomaterials & Industrial Design</span>
+            <span class="block text-xs text-muted">Circular Systems</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SKILLS / TOOLKIT ================= -->
+  <section id="skills" class="max-w-6xl mx-auto px-6 py-20">
+    <div class="mb-12">
+      <span class="text-xs uppercase font-mono tracking-widest text-forest font-bold">Competencies</span>
+      <h2 class="text-4xl font-serif mt-2 text-ink">Skills & Tools</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-6 rounded-2xl border border-borderSubtle bg-white">
+        <h3 class="font-serif text-xl mb-3 text-ink">Lab & Material Analysis</h3>
+        <ul class="text-sm text-muted space-y-2">
+          <li>• Natural fiber extraction & chemical scouring</li>
+          <li>• Tensile testing & stress analysis</li>
+          <li>• Bio-binder & cross-linker synthesis</li>
+          <li>• Biodegradability & soil-testing protocols</li>
+        </ul>
+      </div>
+
+      <div class="p-6 rounded-2xl border border-borderSubtle bg-white">
+        <h3 class="font-serif text-xl mb-3 text-ink">Design & Fabrication</h3>
+        <ul class="text-sm text-muted space-y-2">
+          <li>
